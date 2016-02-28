@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/news_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="130dip"
+    android:background="@drawable/news_list_item_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:marqueeRepeatLimit="marquee_forever">
+    <RelativeLayout 
+        android:id="@+id/news_item_info_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"  
+        android:layout_marginRight="20dp">
+        <TextView
+            android:id="@+id/newslist_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@drawable/new_list_content_selector"
+            android:text="目录"
+       android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"/>
+     <TextView 
+         android:id="@+id/newslist_item_digest"
+           android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/newslist_item_title"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"           
+            android:textSize="16dp"
+            android:textColor="@drawable/new_list_content_selector"
+            android:ellipsize="end"
+            android:text="摘要"
+           
+            android:marqueeRepeatLimit="marquee_forever"
+         />
+     <RelativeLayout 
+         android:id="@+id/news_item_st_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"  
+        android:layout_alignParentBottom="true"
+         >
+      <TextView 
+         android:id="@+id/newslist_item_source"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="4dp"
+            android:textSize="14dp"
+            android:textColor="@drawable/new_list_content_selector"
+            android:text="来源"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+         />
+       <TextView 
+
+         android:id="@+id/newslist_item_ptime"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+           
+            android:layout_marginRight="2dp"
+         
+           
+            android:textSize="12dp"
+          
+            android:textColor="@drawable/new_list_content_selector"
+            
+            android:text="10分钟前"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+         />
+</RelativeLayout>
+        </RelativeLayout>
+             <Button 
+             android:id="@+id/newslist_item_button"
+           android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/news_title_right"
+            android:layout_alignParentRight="true"
+           />
+</RelativeLayout>
+    

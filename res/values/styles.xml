@@ -1,0 +1,14 @@
+<resources>
+ <string-array name="categories">
+  <item>综合</item>
+<item>移动</item>
+<item>web</item>
+<item>构架</item>
+<item>编程</item>
+<item>互联</item>
+<item>数据</item>
+<item>系统</item>
+<item>云</item>
+<item>研发</item>
+</string-array>
+</resources>

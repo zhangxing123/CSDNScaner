@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/main_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+ >
+
+    <RelativeLayout
+        android:id="@id/titlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar" >
+
+        <TextView
+            android:id="@id/titlebar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/app_name"
+            android:textColor="@drawable/white"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@id/titlebar_title"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="6dip"
+            android:background="@drawable/titlebar_btn_refresh_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/categorybar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+     
+        android:background="@drawable/categorybar" >
+
+        <Button
+            android:id="@id/category_arrow_right"
+            android:layout_width="15dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dip" 
+            android:layout_marginTop="10dip"
+            android:background="@drawable/newsdetailstitlebackgroundtwo" />
+
+        <HorizontalScrollView
+            android:id="@id/category_scorllview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:layout_marginLeft="6dip"
+            
+            android:layout_toLeftOf="@id/category_arrow_right"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@id/category_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+          
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+         android:layout_marginBottom="8dip"
+         android:layout_marginTop="8dip"
+         >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+          
+            <ListView
+                android:id="@+id/category_news_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#000000"
+                android:divider="@drawable/list_separator_line"
+                android:listSelector="@drawable/news_list_item_selector" />
+
+      
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
